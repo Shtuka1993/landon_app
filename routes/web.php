@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<h3>Landon App PAge</h3>';
+    //return view('welcome');
 });
