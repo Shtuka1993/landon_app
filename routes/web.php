@@ -33,3 +33,5 @@ Route::get('/home', function () {
     $data['version'] = '0.1.1';
     return view('home', $data);
 });
+
+Route::get('/di', 'ClientController@di');
