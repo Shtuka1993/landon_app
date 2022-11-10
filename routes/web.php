@@ -12,6 +12,18 @@
 */
 
 Route::get('/', function () {
-    return '<h3>Landon App PAge</h3>';
-    //return view('welcome');
+    return view('welcome');
+});
+
+Route::get('/about', function () {
+    return '<h3>About</h3>';
+});
+
+Route::get('/array', function () 
+{
+    $response_arr = [];
+    $response_arr['author'] = 'BP';
+    $response_arr['version'] = '0.1.1';
+
+    return $response_arr;
 });
