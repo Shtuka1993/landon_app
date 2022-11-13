@@ -40,3 +40,16 @@ Route::get('/facades/db', function () {
     
     return DB::select('SELECT * from table');
 });
+
+Route::get('/facades/encrypt', function () {
+    
+    return Crypt::encrypt('123456789');
+});
+
+//JpdiI6IlZBWnQrZmJweHpNQjFjOUw3blYzVmc9PSIsInZhbHVlIjoiSncrZGJCSEZSd20wVGRIRzR5SEExZjlFb2tUQW9ZaFUxclY2WnBaWmNqVT0iLCJtYWMiOiI4NWM0N2U4ZDk1ZmQ5MGMzZTVhOTE1YWNjMWRmMTAyMzkzM2UxZDBmYzUyNmU4MjdlYmI3NzQwOTFlMDg1NjVmIn0=
+//eyJpdiI6IlV6UVM4NGh6UUtzU3JsQittMFdJcVE9PSIsInZhbHVlIjoiXC9CS2d3TmFxWlFyMU52VWpKdzB6UHE3SDRxMEw2dVNyR1wvOEJQYm1TY2hnPSIsIm1hYyI6IjhhNDgxM2Q4MGZjOWJhMTEyNDYxMWUxZTlmZDU0NTY0ZWUyMzBmMDg1ZjFjYWM0ZmNmMTQzNTk0NGExYzZlNmMifQ==
+Route::get('/facades/decrypt', function () {
+    $code = 'eyJpdiI6IlV6UVM4NGh6UUtzU3JsQittMFdJcVE9PSIsInZhbHVlIjoiXC9CS2d3TmFxWlFyMU52VWpKdzB6UHE3SDRxMEw2dVNyR1wvOEJQYm1TY2hnPSIsIm1hYyI6IjhhNDgxM2Q4MGZjOWJhMTEyNDYxMWUxZTlmZDU0NTY0ZWUyMzBmMDg1ZjFjYWM0ZmNmMTQzNTk0NGExYzZlNmMifQ==';
+    //return Crypt::decrypt('eyJpdiI6IlV6UVM4NGh6UUtzU3JsQittMFdJcVE9PSIsInZhbHVlIjoiXC9CS2d3TmFxWlFyMU52VWpKdzB6UHE3SDRxMEw2dVNyR1wvOEJQYm1TY2hnPSIsIm1hYyI6IjhhNDgxM2Q4MGZjOWJhMTEyNDYxMWUxZTlmZDU0NTY0ZWUyMzBmMDg1ZjFjYWM0ZmNmMTQzNTk0NGExYzZlNmMifQ==');
+    return Crypt::decrypt($code);
+});
