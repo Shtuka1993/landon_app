@@ -13,4 +13,29 @@ class ClientController extends Controller
     public function di() {
         dd($this->titles);
     }
+
+    public function index() {
+        
+        return __METHOD__;
+    }
+
+    public function newClient() {
+        
+        return __METHOD__;
+    }
+
+    public function create() {
+        
+        return __METHOD__;
+    }
+
+    public function show($client_id) {
+
+        return __METHOD__ . ':' . $client_id;
+    }
+
+    public function modify($client_id) {
+
+        return __METHOD__ . ':' . $client_id;
+    }
 }
