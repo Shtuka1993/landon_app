@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ContentsContrller@home');
 
 Route::get('/about', function () {
     return '<h3>About</h3>';
@@ -53,3 +51,4 @@ Route::get('/facades/decrypt', function () {
     //return Crypt::decrypt('eyJpdiI6IlV6UVM4NGh6UUtzU3JsQittMFdJcVE9PSIsInZhbHVlIjoiXC9CS2d3TmFxWlFyMU52VWpKdzB6UHE3SDRxMEw2dVNyR1wvOEJQYm1TY2hnPSIsIm1hYyI6IjhhNDgxM2Q4MGZjOWJhMTEyNDYxMWUxZTlmZDU0NTY0ZWUyMzBmMDg1ZjFjYWM0ZmNmMTQzNTk0NGExYzZlNmMifQ==');
     return Crypt::decrypt($code);
 });
+
