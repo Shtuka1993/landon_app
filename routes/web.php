@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'ContentsContrller@home');
+Route::get('/', 'ContentsController@home');
 
 Route::get('/about', function () {
     return '<h3>About</h3>';
