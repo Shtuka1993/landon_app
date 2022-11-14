@@ -16,22 +16,24 @@ class ClientController extends Controller
 
     public function index() {
         
-        return __METHOD__;
+        return view('client/index');
+        //return __METHOD__;
     }
 
     public function newClient() {
         
-        return __METHOD__;
+        return view('client/newClient');
     }
 
     public function create() {
         
-        return __METHOD__;
+        return view('client/create');
     }
 
     public function show($client_id) {
 
-        return __METHOD__ . ':' . $client_id;
+        return view('client/show');
+        //return __METHOD__ . ':' . $client_id;
     }
 
     public function modify($client_id) {
