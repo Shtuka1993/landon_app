@@ -41,7 +41,7 @@ class ClientController extends Controller
 
     public function newClient() {
         
-        return view('client/newClient');
+        return view('client/newClient', $this->titles);
     }
 
     public function create() {

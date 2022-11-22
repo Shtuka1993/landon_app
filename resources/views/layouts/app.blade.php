@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <title>Landon Hotel App</title>
             <link rel="icon" type="image/x-icon" href="favicon.ico" />
-            <link rel="stylesheet" href="css/foundation.css">
-            <link rel="stylesheet" href="css/app.css">
-            <link rel="stylesheet" href="pickadate/lib/themes/default.css">
-            <link rel="stylesheet" href="pickadate/lib/themes/default.date.css">
+            <link rel="stylesheet" href="/css/foundation.css">
+            <link rel="stylesheet" href="/css/app.css">
+            <link rel="stylesheet" href="/pickadate/lib/themes/default.css">
+            <link rel="stylesheet" href="/pickadate/lib/themes/default.date.css">
     <meta class="foundation-mq"></head>
     <body>
 
@@ -16,8 +16,8 @@
       <div class="row">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu="tckp8q-dropdown-menu" role="menubar">
-            <li role="menuitem"><a href="./home">Home</a></li>
-            <li role="menuitem"><a href="./clients">Clients</a></li>
+            <li role="menuitem"><a href="/home">Home</a></li>
+            <li role="menuitem"><a href="/clients">Clients</a></li>
           </ul>
         </div>
       </div>
@@ -42,12 +42,12 @@
       $(document).foundation();
     </script>
 
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/vendor/what-input.js"></script>
-        <script src="js/vendor/foundation.js"></script>
-        <script src="js/app.js"></script>
-        <script src="pickadate/lib/picker.js"></script>
-        <script src="pickadate/lib/picker.date.js"></script>
+        <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/vendor/what-input.js"></script>
+        <script src="/js/vendor/foundation.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/pickadate/lib/picker.js"></script>
+        <script src="/pickadate/lib/picker.date.js"></script>
         <script>
             $('.datepicker').pickadate(
               { 
