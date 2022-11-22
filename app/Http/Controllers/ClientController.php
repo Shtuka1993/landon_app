@@ -60,7 +60,7 @@ class ClientController extends Controller
                 $request,
                 [
                     'title' => 'required',
-                    'name' => 'required',
+                    'name' => 'required|min:5',
                     'last_name' => 'required',
                     'address' => 'required',
                     'zip_code' => 'required',
