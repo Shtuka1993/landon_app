@@ -1,4 +1,10 @@
-<form action="/clients/new" method="post">
+@extends('layouts.app')
+
+@section('content')
+    <div class="row">
+      <div class="medium-12 large-12 columns">
+        <h4>{{ $modify ? 'Modify' : 'New' }} Client</h4>
+        <form action="{{ $modify ? route('update_client', [ 'client_id' => 1 ]) : route('create_client') }}" method="post">
           <div class="medium-4  columns">
             <label>Title</label>
             <select name="form[title]">
@@ -41,3 +47,6 @@
             <input value="SAVE" class="button success hollow" type="submit">
           </div>
         </form>
+      </div>
+    </div>
+@endsection
