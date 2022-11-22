@@ -6,7 +6,9 @@
         <h4>Clients</h4>
         <div class="medium-2  columns"><a class="button hollow success" href="./clients_new.html">ADD NEW CLIENT</a></div>
 
-
+        <pre>
+          {{ var_dump($clients) }}
+        </pre>
         
         <table class="stack">
           <thead>
