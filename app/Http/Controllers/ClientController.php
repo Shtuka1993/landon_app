@@ -40,8 +40,11 @@ class ClientController extends Controller
     }
 
     public function newClient() {
-        
-        return view('client/newClient', $this->titles);
+        $data = [
+            'titles' => $this->titles,
+            'modify' => false,
+        ];
+        return view('client/newClient', $data);
     }
 
     public function create() {
