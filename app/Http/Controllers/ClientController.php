@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Title as Title;
 use Illuminate\Http\Request;
+use App\Client as Client;
 
 class ClientController extends Controller
 {
@@ -40,7 +41,7 @@ class ClientController extends Controller
         //return __METHOD__;
     }
 
-    public function newClient( Request $request ) {
+    public function newClient( Request $request, Client $client ) {
         $data = [
             'title' => $request->input('title'),
             'name' => $request->input('name'),
@@ -50,8 +51,6 @@ class ClientController extends Controller
             'city' => $request->input('city'),
             'state' => $request->input('state'),
             'email' => $request->input('email'),
-            'titles' => $this->titles,
-            'modify' => false,
         ];
 
         if ( $request->isMethod('post') ) {
@@ -70,8 +69,13 @@ class ClientController extends Controller
                 ]
             );
 
+            $client->insert($data);
+
             return redirect('clients');
         }
+        
+        $data['titles'] = $this->titles;
+        $data['modify'] = false;
 
         return view('client/form', $data);
     }
