@@ -17,4 +17,10 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testTitlesModeCount()
+    {
+        $value = 1;
+        $this->assertTrue( 1 === $value, 'Value should be 1' );
+    }
 }
