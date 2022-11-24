@@ -26,14 +26,14 @@ class Title extends ReadOnlyBase
             'title' => "Dr",
         ],
         [
-        'value' => "",
-            'selected' => false,
-            'title' => "",
-        ],
-        [
             'value' => "mx",
             'selected' => false,
             'title' => "Mx",
+        ],
+        [
+        'value' => "Professor",
+            'selected' => false,
+            'title' => "Ps",
         ],
     ];
 }
