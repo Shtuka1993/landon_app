@@ -20,4 +20,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function testNewClientForm()
+    {
+        $response = $this->get('/clients/new');
+
+        $response->assertStatus(200);
+    }
 }
