@@ -20,7 +20,7 @@ class ExampleTest extends TestCase
 
     public function testTitlesModeCount()
     {
-        $value = 1;
+        $value = 2;
         $this->assertTrue( 1 === $value, 'Value should be 1' );
     }
 }
