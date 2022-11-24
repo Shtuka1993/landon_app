@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use App\Title;
 
 class ExampleTest extends TestCase
 {
@@ -20,7 +21,9 @@ class ExampleTest extends TestCase
 
     public function testTitlesModeCount()
     {
-        $value = 2;
-        $this->assertTrue( 1 === $value, 'Value should be 1' );
+        $title = new Title();
+        //$value = 2;
+        //$this->assertTrue( 1 === $value, 'Value should be 1' );
+        $this->assertTrue( count( $title->all() ) === 6, 'It should have 6 titles');
     }
 }
