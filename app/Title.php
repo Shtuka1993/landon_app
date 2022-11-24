@@ -31,7 +31,7 @@ class Title extends ReadOnlyBase
             'title' => "Mx",
         ],
         [
-        'value' => "Professor",
+            'value' => "Professor",
             'selected' => false,
             'title' => "Ps",
         ],

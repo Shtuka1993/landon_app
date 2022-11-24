@@ -22,16 +22,12 @@ class ExampleTest extends TestCase
     public function testTitlesModeCount()
     {
         $title = new Title();
-        //$value = 2;
-        //$this->assertTrue( 1 === $value, 'Value should be 1' );
         $this->assertTrue( count( $title->all() ) === 6, 'It should have 6 titles');
     }
 
     public function testLastTitleShouldBeProfessor()
     {
         $title = new Title();
-        //$value = 2;
-        //$this->assertTrue( 1 === $value, 'Value should be 1' );
         $this->assertTrue( ( $title->all() )[5]['value']  === 'Professor' , 'Last title should be Professor');
     }
 }
