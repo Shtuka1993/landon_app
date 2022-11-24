@@ -28,7 +28,6 @@ class ExampleTest extends TestCase
     public function testLastTitleShouldBeProfessor()
     {
         $title = new Title();
-        //$this->assertTrue( ( $title->all() )[5]['value']  === 'Professor' , 'Last title should be Professor');
         $this->assertEquals( 'Professor', ( $title->all() )[5]['value'] , 'Last title should be Professor');
     }   
 }
