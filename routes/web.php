@@ -61,3 +61,7 @@ Route::get('/facades/decrypt', function () {
     return Crypt::decrypt($code);
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
