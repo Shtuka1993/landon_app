@@ -26,6 +26,17 @@ class ClientController extends Controller
         //return __METHOD__;
     }
 
+    public function export() {
+        $data = [];
+
+        $data['clients'] = $this->client->all();
+
+        header('Content-Disposition: attachment; filename=export.xls');
+
+        return view('client/export', $data);
+        //return __METHOD__;
+    }
+
     public function newClient( Request $request ) {
         $data = [
             'title' => $request->input('title'),
